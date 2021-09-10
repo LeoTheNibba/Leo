@@ -44,11 +44,22 @@ local Border_5 = Instance.new("Frame")
  
 m.Name = "m"
 m.Parent = game.CoreGui
-m.Draggable = true
+_1.Draggable = true
 
+
+
+_1.Name = "1"
+_1.Parent = m
+_1.BackgroundColor3 = Color3.new(1, 1, 1)
+_1.BackgroundTransparency = 1
+_1.Position = UDim2.new(0.0157894734, 0, 0.445497632, 0)
+_1.Size = UDim2.new(0, 462, 0, 274)
+_1.Image = "rbxassetid://3570695787"
+_1.ScaleType = Enum.ScaleType.Slice
+_1.SliceCenter = Rect.new(100, 100, 100, 100)
 local UserInputService = game:GetService("UserInputService")
 
-local gui = m
+local gui = _1
 
 local dragging
 local dragInput
@@ -91,19 +102,9 @@ local UIS = game:GetService('UserInputService')
 
 UIS.InputBegan:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.RightShift then
-		m.Visible = true
+		_1.Visible = true
 	end
 end)
-
-_1.Name = "1"
-_1.Parent = m
-_1.BackgroundColor3 = Color3.new(1, 1, 1)
-_1.BackgroundTransparency = 1
-_1.Position = UDim2.new(0.0157894734, 0, 0.445497632, 0)
-_1.Size = UDim2.new(0, 462, 0, 274)
-_1.Image = "rbxassetid://3570695787"
-_1.ScaleType = Enum.ScaleType.Slice
-_1.SliceCenter = Rect.new(100, 100, 100, 100)
 
 Title.Name = "Title"
 Title.Parent = _1
