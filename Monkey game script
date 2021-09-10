@@ -144,7 +144,7 @@ Monke.TextScaled = true
 Monke.TextSize = 14
 Monke.TextWrapped = true
 Monke.MouseButton1Down:connect(function()
-	Monke.Parent.Monke.Visible = true
+	Monke.Parent.MonkeFrame.Visible = true
 	Monke.Parent.Human.Visible = false
 	Monke.Parent.Misc.Visible = false
 	Monke.Parent.Welcome.Visible = false
@@ -162,7 +162,7 @@ HumanThings.TextScaled = true
 HumanThings.TextSize = 14
 HumanThings.TextWrapped = true
 HumanThings.MouseButton1Down:connect(function()
-	HumanThings.Parent.Monke.Visible = false
+	HumanThings.Parent.MonkeFrame.Visible = false
 	HumanThings.Parent.Human.Visible = true
 	HumanThings.Parent.Misc.Visible = false
 	HumanThings.Parent.Welcome.Visible = false
@@ -180,7 +180,7 @@ MiscThings.TextScaled = true
 MiscThings.TextSize = 14
 MiscThings.TextWrapped = true
 MiscThings.MouseButton1Down:connect(function()
-	MiscThings.Parent.Monke.Visible = false
+	MiscThings.Parent.MonkeFrame.Visible = false
 	MiscThings.Parent.Human.Visible = false
 	MiscThings.Parent.Misc.Visible = true
 	MiscThings.Parent.Welcome.Visible = false
@@ -430,7 +430,7 @@ Hummer.TextColor3 = Color3.new(0, 0, 0)
 Hummer.TextScaled = true
 Hummer.TextSize = 14
 Hummer.TextWrapped = true
-Armory.MouseButton1Down:connect(function()
+Hummer.MouseButton1Down:connect(function()
 	game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-120.74337, 4.24369192, 126.747856, -0.309060395, 0.318249434, -0.89621371, 1.9840817e-08, 0.942348838, 0.334632218, 0.951042414, 0.103421547, -0.291242689) --Armory
 end)
 
